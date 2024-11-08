@@ -176,6 +176,13 @@ form button:hover {
 .login-page,
 .signup-page {
   padding: 20px;
+  max-width: 900px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 100px); /* Subtracting header height and margins */
 }
 
 .login-page h2,
@@ -194,4 +201,73 @@ form button:hover {
   font-size: 14px;
   margin-bottom: 10px;
   text-shadow: 0 0 5px #b87333;
+}
+
+.signup-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.signup-page form {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  align-items: start;
+}
+
+.signup-page form input,
+.signup-page form select,
+.signup-page form button {
+  width: 100%;
+  margin: 0;
+}
+
+.signup-page form button {
+  grid-column: span 2;
+  width: 50%;
+  justify-self: center;
+}
+
+.signup-page h2 {
+  grid-column: span 2;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #b87333;
+  text-shadow: 0 0 5px #b87333, 0 0 10px #b87333, 0 0 15px #b87333;
+}
+
+.signup-page .back-button {
+  grid-column: span 2;
+  text-align: left;
+  width: 100%;
+  color: #b87333;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #b87333;
+}
+
+.login-page {
+  padding: 20px;
+  max-width: 900px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 100px);
+}
+
+.login-page form {
+  width: 100%;
+  max-width: 400px;  /* Increased width for the form */
+}
+
+.login-page form input,
+.login-page form button {
+  width: 100%;       /* Make inputs take full width of form */
+  margin: 15px 0;    /* Increased vertical spacing */
+  padding: 12px;     /* Slightly larger padding */
 }
