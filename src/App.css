@@ -7,47 +7,66 @@
 
 body {
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
-  background-color: #f5f5f5;
+  background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)),
+              url('C:\Users\roche\OneDrive\Documents\GitHub\LibraryBookBorrowingSystem\src\assets\background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin: 0;
+  padding-top: 60px;
 }
 
 a {
-  color: #007bff;
+  color: #b87333;
   text-decoration: none;
+  text-shadow: 0 0 5px #b87333, 0 0 10px #b87333, 0 0 15px #b87333;
 }
 
 a:hover {
+  color: #8b4513;
   text-decoration: underline;
+  text-shadow: 0 0 5px #8b4513, 0 0 10px #8b4513, 0 0 15px #8b4513;
 }
 
 /* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
 header nav {
   display: flex;
   justify-content: center;
-  padding: 10px;
-  background-color: #eaeaea;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ddd;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-bottom: 2px solid #b87333;
+  box-shadow: 0 0 10px #b87333;
 }
 
 header nav a {
   margin: 0 15px;
   font-weight: bold;
-  color: #333;
+  color: #b87333;
+  text-shadow: 0 0 5px #b87333, 0 0 10px #b87333;
 }
 
 /* Page Containers */
 .container {
   width: 100%;
   max-width: 600px;
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   text-align: center;
+  border: 1px solid #b87333;
+  box-shadow: 0 0 20px #b87333;
+  margin: 20px auto;
 }
 
 /* Home Page */
@@ -75,18 +94,25 @@ form button {
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #b87333;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  box-shadow: 0 0 5px #b87333;
 }
 
 form button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #b87333;
+  color: #b87333;
+  text-shadow: 0 0 5px #b87333;
+  box-shadow: 0 0 10px #b87333;
+  transition: all 0.3s ease;
 }
 
 form button:hover {
-  background-color: #0056b3;
+  background-color: #b87333;
+  color: #000;
+  box-shadow: 0 0 20px #b87333;
 }
 
 /* Profile & Dashboard */
@@ -108,12 +134,15 @@ form button:hover {
   font-size: 20px;
   font-weight: bold;
   margin: 5px 0;
+  color: #b87333;
+  text-shadow: 0 0 5px #b87333, 0 0 10px #b87333;
 }
 
 .profile p {
   font-size: 16px;
-  color: #666;
+  color: #fff;
   margin: 3px 0;
+  text-shadow: 0 0 5px #fff;
 }
 
 .dashboard nav {
@@ -129,15 +158,18 @@ form button:hover {
   width: 80%;
   max-width: 250px;
   margin: auto;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #b87333;
+  color: #b87333;
+  text-shadow: 0 0 5px #b87333;
+  box-shadow: 0 0 10px #b87333;
   cursor: pointer;
 }
 
 .dashboard nav button:hover {
-  background-color: #0056b3;
+  background-color: #b87333;
+  color: #000;
+  box-shadow: 0 0 20px #b87333;
 }
 
 /* Specific Page Styles */
@@ -150,13 +182,16 @@ form button:hover {
 .signup-page h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: #b87333;
+  text-shadow: 0 0 5px #b87333, 0 0 10px #b87333, 0 0 15px #b87333;
 }
 
 .signup-page .back-button {
   text-align: left;
   width: 100%;
-  color: #007bff;
+  color: #b87333;
   cursor: pointer;
   font-size: 14px;
   margin-bottom: 10px;
+  text-shadow: 0 0 5px #b87333;
 }

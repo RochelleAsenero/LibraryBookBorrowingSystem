@@ -18,6 +18,8 @@ function SignUpPage() {
           <input type="text" placeholder="Address" required />
           <input type="tel" placeholder="Phone #" required />
           <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="Confirm Password" required />
           <select>
             <option value="Student">Student</option>
             <option value="Admin">Admin</option>
